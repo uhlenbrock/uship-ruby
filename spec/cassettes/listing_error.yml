@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apistaging.uship.com/v2/listings/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.10.0
+      Authorization:
+      - Bearer gjw9g86h3e87ypqha4y428um
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: The resource you you are seeking cannot be found. Please check the
+        id provided and try again.
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 20 Dec 2016 18:07:50 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx/0.7.67
+      Set-Cookie:
+      - stagesticky=ST02; path=/
+      X-Mashery-Message-Id:
+      - ed5531e0-6815-47b6-bd52-12deb882d696
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-63.mashery.com
+      X-Uship-Trace:
+      - 5dbf0f8c-b5b2-4c68-9cd5-e1519ba5d783
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"reason":"The requested Listing could not be found.","errors":[]}'
+    http_version: 
+  recorded_at: Tue, 20 Dec 2016 18:30:28 GMT
+recorded_with: VCR 3.0.3
