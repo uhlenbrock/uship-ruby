@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apistaging.uship.com/v2/listings
+    body:
+      encoding: UTF-8
+      string: '{"body":{"status":"Saved","service_types":["EnclosedTransport"],"title":"Shipping
+        a couch","description":"Go west young man"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.10.0
+      Authorization:
+      - Bearer gjw9g86h3e87ypqha4y428um
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 16 Jan 2017 22:56:26 GMT
+      Server:
+      - Mashery Proxy
+      Www-Authenticate:
+      - Bearer realm="apistaging.uship.com", error="invalid_token"
+      X-Error-Detail-Header:
+      - Not Authorized
+      X-Mashery-Error-Code:
+      - ERR_403_NOT_AUTHORIZED
+      X-Mashery-Message-Id:
+      - 91e6c094-24bd-4443-b665-46e8dc2626a7
+      X-Mashery-Responder:
+      - prod-j-worker-us-west-1c-59.mashery.com
+      Content-Length:
+      - '52'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "reason": "Not Authorized",
+          "errors" : [
+          ]
+        }
+    http_version: 
+  recorded_at: Mon, 16 Jan 2017 22:56:27 GMT
+recorded_with: VCR 3.0.3
